@@ -1,0 +1,10 @@
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\bin\Debug\BlocdeNotas.exe.config
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\bin\Debug\BlocdeNotas.exe
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\bin\Debug\BlocdeNotas.pdb
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\obj\Debug\BlocdeNotas.csproj.AssemblyReference.cache
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\obj\Debug\BlocdeNotas.Form1.resources
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\obj\Debug\BlocdeNotas.Properties.Resources.resources
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\obj\Debug\BlocdeNotas.csproj.GenerateResource.cache
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\obj\Debug\BlocdeNotas.csproj.CoreCompileInputs.cache
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\obj\Debug\BlocdeNotas.exe
+C:\Users\Cristina\OneDrive\Escritorio\BlocdeNotas\BlocdeNotas\obj\Debug\BlocdeNotas.pdb
