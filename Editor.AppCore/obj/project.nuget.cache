@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3yiPU3WyY+lmYEBKiNcbjsKBSizYU7ol/1kgvPEB2IN8bsDHK7l0qzuPiEB3rSThtbV2FPGM/6fcXLgZNfLzsg==",
+  "dgSpecHash": "hNrcvosW2UR4J92PqPEFHDAlXIQo43WBNtUfjK6QjL3WzgluV8yjyxFtKNC7rFbuHOvbsNrV2Wvard0LiKxwBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\BlocdeNotas\\Editor.AppCore\\Editor.AppCore.csproj",
+  "projectFilePath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Blog de Notas\\Editor.AppCore\\Editor.AppCore.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Cristina\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Cristina\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
