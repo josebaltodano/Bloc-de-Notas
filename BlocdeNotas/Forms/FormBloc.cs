@@ -31,48 +31,6 @@ namespace BlocdeNotas
             name = a;
             InitializeComponent();
         }
-        /*private void ToolStripComboBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
-        private void colorDeFuenteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var color = colorDialog1.ShowDialog();
-            if (color == DialogResult.OK)
-            {
-                richTextBox1.ForeColor = colorDialog1.Color;
-            }
-        }
-
-        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var formato = fontDialog1.ShowDialog();
-            if (formato == DialogResult.OK)
-            {
-                richTextBox1.Font = fontDialog1.Font;
-
-            }
-        }
-
-
-
-        private void copiarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            richTextBox1.Copy();
-        }*/
-
-        /*private void pegarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            richTextBox1.Paste();
-        }*/
-
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -80,22 +38,7 @@ namespace BlocdeNotas
 
         private void abrirToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            OpenFileDialog myopen = new OpenFileDialog();
-            myopen.Title = "Abrir Archivo";
-            myopen.Filter = "Archivos de texto(.txt)|*.txt|Todos los archivos (*.*)|*.*";
-            myopen.ShowDialog();
-            if (myopen.FileName == "")
-            {
-                return;
-            }
-            myopen.OpenFile();
-            ArchivoTexto archivo = new ArchivoTexto()
-            {
-                Ruta = myopen.FileName,
-            };
-            string s = richTextBox1.Text;
-            archivo1.Open(archivo,ref s);
-            richTextBox1.Text = s;
+            return;
         }
 
         private void nuevoToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -147,9 +90,7 @@ namespace BlocdeNotas
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
         }
-
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog mySave = new SaveFileDialog();
@@ -221,11 +162,6 @@ namespace BlocdeNotas
         
         private void tvFile_Click(object sender, EventArgs e)
         {
-            /*if (tvFile.ContextMenuStrip.)//.Items.Contains(menu))
-            {
-                string carpeta = tvFile.SelectedNode.FullPath+@"\Carpeta";
-                Directory.CreateDirectory(carpeta);
-            }*/
         }
 
         private void tvFile_AfterSelect(object sender, TreeViewEventArgs e)
@@ -301,6 +237,64 @@ namespace BlocdeNotas
         private void abrirToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ruta1 = tvFile.SelectedNode.Tag.ToString() + "\\" +tvFile.SelectedNode.Text;
+        }
+
+        private void archivoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog myopen = new OpenFileDialog();
+            myopen.Title = "Abrir Archivo";
+            myopen.Filter = "Archivos de texto(.txt)|*.txt|Todos los archivos (*.*)|*.*";
+            myopen.ShowDialog();
+            if (myopen.FileName == "")
+            {
+                return;
+            }
+            myopen.OpenFile();
+
+                ArchivoTexto archivo = new ArchivoTexto()
+                {
+                    Ruta = myopen.FileName,
+                };
+                string s = richTextBox1.Text;
+                archivo1.Open(archivo, ref s);
+                richTextBox1.Text = s;
+        }
+
+        private void carpetaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            folder.Description = "Selecciona la carpeta";
+            folder.ShowDialog();
+            path = folder.SelectedPath;
+            tvFile.Nodes.Clear();
+            if (path == string.Empty)
+            {
+                return;
+            }
+            DirectoryInfo directoryInfo = new DirectoryInfo(path);
+            tvFile.Nodes.Add(CrearArbol(directoryInfo));
+            tvFile.ContextMenuStrip = ctmsOptions;
+        }
+
+        private void cortarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Cut();
+        }
+
+        private void seleccionarTodoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectAll();
+        }
+
+        private void borrarTodoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+        }
+
+        private void horaYFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DateTime fecha = DateTime.Now;
+            richTextBox1.Text += fecha.ToString();
         }
     }
 }

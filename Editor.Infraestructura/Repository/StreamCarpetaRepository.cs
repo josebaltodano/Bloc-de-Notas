@@ -11,7 +11,6 @@ namespace Editor.Infraestructura.Repository
 {
     public class StreamCarpetaRepository : ICarpetaModel
     {
-        private string ruta1="";
         public StreamCarpetaRepository()
         {
 

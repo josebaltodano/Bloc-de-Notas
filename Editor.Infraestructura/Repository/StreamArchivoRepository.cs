@@ -14,6 +14,8 @@ namespace Editor.Infraestructura.Repository
         {
 
         }
+        StreamWriter streamWriter;
+        StreamReader mylectura;
         public void Add(ArchivoTexto t)
         {
             try
@@ -21,9 +23,7 @@ namespace Editor.Infraestructura.Repository
 
                 if (ruta1 != string.Empty && ruta1 != null)
                 {
-                    File.Delete(ruta1);
-                    StreamWriter streamWriter;
-                    using (FileStream fileStream = new FileStream(ruta1, FileMode.Append, FileAccess.Write))
+                    using (FileStream fileStream = new FileStream(ruta1, FileMode.Truncate, FileAccess.Write))
                     {
                         streamWriter = new StreamWriter(fileStream);
                         streamWriter.Write(t.Texto);
@@ -32,15 +32,24 @@ namespace Editor.Infraestructura.Repository
                 }
 
             }
-            catch (IOException io)
+            catch (IOException)
             {
                 return;
             }
         }
-
+        /*StreamWriter StreamWriter;
+        public void OverWrite(ArchivoTexto t)
+        {
+            using (FileStream file=new FileStream(ruta1,FileMode.Append,FileAccess.Write))
+            {
+                StreamWriter = new StreamWriter(file);
+                StreamWriter.Write(t.Texto);
+                StreamWriter.Close();
+                file.Close();
+            }
+        }*/
         public void Create(ArchivoTexto t)
         {
-            StreamWriter streamWriter;
             using (FileStream fileStream = new FileStream(t.Ruta, FileMode.Append, FileAccess.Write))
             {
                 streamWriter = new StreamWriter(fileStream);
@@ -81,7 +90,6 @@ namespace Editor.Infraestructura.Repository
         {
             try
             {
-                StreamWriter streamWriter;
                 using (FileStream fileStream = new FileStream(t.Ruta, FileMode.Append, FileAccess.Write))
                 {
                     streamWriter = new StreamWriter(fileStream);
@@ -100,7 +108,6 @@ namespace Editor.Infraestructura.Repository
         {
             try
             {
-                StreamReader mylectura = null;
                 using (FileStream fileStream = new FileStream(t.Ruta, FileMode.OpenOrCreate, FileAccess.Read))
                 {
                     ruta1 = t.Ruta;
