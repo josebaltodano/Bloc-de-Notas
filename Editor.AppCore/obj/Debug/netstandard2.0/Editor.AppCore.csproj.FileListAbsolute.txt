@@ -1,0 +1,13 @@
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\bin\Debug\netstandard2.0\Editor.AppCore.deps.json
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\bin\Debug\netstandard2.0\Editor.AppCore.dll
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\bin\Debug\netstandard2.0\Editor.AppCore.pdb
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\bin\Debug\netstandard2.0\Editor.Domain.dll
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\bin\Debug\netstandard2.0\Editor.Domain.pdb
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.AssemblyInfoInputs.cache
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.AssemblyInfo.cs
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.csproj.CopyComplete
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.dll
+C:\Users\carlo\OneDrive\Escritorio\Blog de Notas\Editor.AppCore\obj\Debug\netstandard2.0\Editor.AppCore.pdb
